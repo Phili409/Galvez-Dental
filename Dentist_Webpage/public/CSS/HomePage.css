@@ -1,0 +1,353 @@
+body {
+    background-color: black;
+}
+
+.banner {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    transition: top 0.5s ease; 
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 300px; 
+    align-items: center;
+    background-color: #222;
+    box-shadow: #444 100px;
+    text-align: center;
+}
+
+.banner h1{
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+}
+.banner img {
+    width: 70px;
+    height: 70px;
+}
+
+.date-time {
+    color: whitesmoke;
+}
+
+p {
+    color: aliceblue;
+}
+
+.intro {
+    z-index: 1;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    position: center;
+    overflow: hidden;
+    align-items: center;
+}
+.intro h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 70px;
+}
+
+.button-container {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 32px;
+}
+
+.button-container button:hover {
+    background-color: black;
+    border-color: indianred;
+    color: white;
+    
+}
+
+hr {
+    border: none;
+    border-top: 2px solid white;
+    width: 85%;
+    margin-top: 100px;
+}
+
+.main-container {
+    position: relative;
+    padding: 80px 40px;
+    margin-top: 100px;
+}
+
+#photo-slide {
+    background-image: url('https://t4.ftcdn.net/jpg/02/57/46/65/240_F_257466529_j6KnNzsrC6VrU9VjBSgViC28uijTJGYs.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%; 
+    background-size: auto;
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1;
+    margin-top: 100px;
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px 0;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-info img {
+    width: 50px;
+    height: 50px;
+}
+.footer-info button {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-info button:hover {
+    background-color: #555;
+}
+
+@keyframes slideUp {
+    from {
+        margin-top: 300px;
+    }
+    to {
+        margin-top: 100px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 300px;
+    font-family: sans-serif;
+    font-size: 32px;
+    color: whitesmoke;
+    font-weight: bold;
+
+    animation: slideUp 2s forwards;
+}
+
+.underline-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-right: 100px;
+    padding: 5px 0;
+    width: 200px;
+    outline: none;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #555;
+}
+
+.welcome-back-text {
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg);
+    color:cornflowerblue; 
+    font-size: 24px; 
+    font-family: sans-serif; 
+    animation: slideFromRight 2s forwards; 
+    margin-left: 10px;
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: rotate(180deg) translateX(100px);
+    }
+    100% {
+        transform: rotate(180deg) translateX(0);
+    }
+}
+.hidden {
+    display: none;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin-top: 300px;
+    font-family: sans-serif;
+    font-size: 32px;
+    color: whitesmoke;
+    font-weight: bold;
+
+    animation: slideUp 2s forwards;
+}
+
+.underline-input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-right: 100px;
+    padding: 5px 0;
+    width: 200px;
+    outline: none;
+}
+
+.underline-input:focus {
+    border-bottom: 2px solid #555;
+}
+.input {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    max-height: 70vh; 
+}
+
+.input-pair {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 10px; 
+    max-width: 50%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    transition: opacity 0.5s;
+    margin-bottom: 20px; 
+}
+
+.input label {
+    color: whitesmoke; 
+}
+.underline-input {
+    margin-right: 0; 
+}
+
+
+.nextButton {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+    
+}
+.nextButton button {
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #555;
+}
+
+.nextButton button:hover {
+    color: #999;
+}
+.nextButton {
+    margin-top: 20px;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ThankYou {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+.ThankYou div{
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-section {
+    display: flex;
+}
+
+
+/* 
+Cookies 
+*/ 
+.cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    display: none;
+    width: 50%;
+    border-radius: 50px;
+}
+
+.cookieConsent p{
+    color: black;
+    font-family: sans-serif;
+}
+
+.cookieConsent button{
+    border-radius: 10px;
+    background-color: #222;
+    border: none;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.cookieConsent img{
+    position: fixed;
+    width: 50px;
+    left: 5;
+}

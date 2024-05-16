@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+}
+
+.Webpage {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+.Webpage div{
+    padding-top: 50px;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+
+hr {
+    width: 25%;
+    border: none;
+    border-top: 3px solid white;
+
+}
+
+iframe {
+    width: 75%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+    display: flex;s
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px 0;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-info img {
+    width: 50px;
+    height: 50px;
+}
+.footer-info button {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-info button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,55 @@
+<!--
+    Gabriel Galvez
+    Homework1.html
+    09/18/2023
+    09/30/2023
+    Description: Dental Practicioner Patient Portal
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework 1: Gabriel Galvez</title>
+        <link rel="stylesheet" href="HomePage.css">
+        <script src="GalvezDental.js"></script>
+    </head>
+    <body>
+        <div class="banner">
+            <img src="https://png.pngtree.com/png-vector/20220622/ourmid/pngtree-smile-dental-logo-template-vector-illustration-icon-design-png-image_5273471.png" atl="Logo">
+            <h1>Galvez Dental</h1>
+            <span class="date-time" id="liveDateTime"></span>
+        </div>
+        <div class="main-container">
+            <div id="photo-slide" class="photo-slide" usemap="#teeth-map"></div>
+            <map name="teeth-map">
+                <area alt="Area1" href="" coords="" shape="">
+            </map>
+            <div class="intro">
+                <h1 id="container-text">
+                    <br><br><br>
+                </h1>
+            </div>
+            <div class="button-container">
+                <button onclick="location.href='/Dentist_Webpage/HTML/login.html'">Login</button>
+                <button onclick="location.href='/Dentist_Webpage/HTML/signup.html'">Sign Up</button>
+            </div>    
+        </div>
+        <div class="cookieConsent" id="cookieConsent">
+            <p>This website uses cookies to ensure the best user experience</p>
+            <button id="acceptCookie" onclick="newUserCookie()">Accept</button>
+            <img src="https://th.bing.com/th/id/OIP.DMKMOt691XFihuKymAiaqAHaHa?w=208&h=208&c=7&r=0&o=5&dpr=2&pid=1.7">
+        </div>    
+        <hr>
+        <footer>
+            <div class="footer-info">
+                <div>Galvez Dental</div>
+                <div>Houston, TX | 77004</div>
+                <img src="https://png.pngtree.com/png-vector/20220622/ourmid/pngtree-smile-dental-logo-template-vector-illustration-icon-design-png-image_5273471.png" alt="Footer Image">
+            </div>
+        </footer>
+        <script>
+            window.onload = (homepageUserWelcome()) & (updateDateTime());
+        </script>
+    </body>
+</html>
